@@ -1,0 +1,4 @@
+root: C:\Users\Lenovo\Desktop\qr-code-frontend 
+path: C:\Program Files\nodejs 
+arch: 64 
+proxy: none

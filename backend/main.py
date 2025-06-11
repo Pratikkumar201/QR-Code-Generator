@@ -14,6 +14,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+def root():
+    return {"message": "QR Code Generator Backend is Running!"}
+
+
 @app.post("/generate_qr")
 async def generate_qr(text: str = Form(...)):
     qr_img = qrcode.make(text)

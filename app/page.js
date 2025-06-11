@@ -13,7 +13,7 @@ export default function Home() {
     const formData = new FormData()
     formData.append('text', text)
 
-    const res = await fetch('https://qr-code-generator-ij17.onrender.com', {
+    const res = await fetch('https://qr-code-generator-ij17.onrender.com/generate_qr', {
       method: 'POST',
       body: formData,
     })
